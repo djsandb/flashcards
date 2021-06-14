@@ -31,9 +31,10 @@ i {
 
 .button {
 	background-color: #ffffff;
-	padding: 5px;
+	padding: 15px;
 	border-radius: 3px;
 	margin-right: 10px;
+	border: 1px solid #ccc;
 }
 
 .button:hover {
