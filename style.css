@@ -9,6 +9,7 @@ body {
 }
 
 .container {
+	background-color: #ffffff;
 	display: block;
 	width: 5in;
 	height: 3in;
