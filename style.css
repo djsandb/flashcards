@@ -28,3 +28,14 @@ body {
 i {
 	color: #183153;
 }
+
+.button {
+	background-color: #ffffff;
+	padding: 5px;
+	border-radius: 3px;
+	margin-right: 10px;
+}
+
+.button:hover {
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
