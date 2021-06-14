@@ -1,3 +1,7 @@
+body {
+	background-color: #f5f5f5;
+}
+
 .flashcard {
 	display: flex;
 	width: calc(10in + 20px);
