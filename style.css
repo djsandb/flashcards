@@ -1,0 +1,21 @@
+.flashcard {
+	display: flex;
+	width: calc(10in + 20px);
+	margin: 0 auto;
+}
+
+.container {
+	display: block;
+	width: 5in;
+	height: 3in;
+	border: 1px solid #ccc;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.container:nth-of-type(odd) {
+	margin-right: 20px;
+}
+
+.ql-container {
+	height: 3in;
+}
