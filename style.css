@@ -35,6 +35,7 @@ i {
 	border-radius: 3px;
 	margin-right: 10px;
 	border: 1px solid #ccc;
+	text-align: center;
 }
 
 .button:hover {
