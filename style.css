@@ -3,9 +3,10 @@ body {
 }
 
 .flashcard {
+	width: 100%;
 	display: flex;
-	width: calc(10in + 20px);
-	margin: 0 auto;
+	justify-content: center;
+	margin-top: 15px;
 }
 
 .container {
@@ -25,19 +26,20 @@ body {
 	height: 3in;
 }
 
-i {
+a i {
+	color: #18181a;
+}
+a i:hover {
 	color: #183153;
 }
 
 .button {
-	background-color: #ffffff;
-	padding: 15px;
-	border-radius: 3px;
 	margin-right: 10px;
-	border: 1px solid #ccc;
-	text-align: center;
 }
 
-.button:hover {
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+#controls {
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }

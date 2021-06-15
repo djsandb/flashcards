@@ -35,3 +35,9 @@ class FlashcardSet {
 }
 
 const gFlashcards = new FlashcardSet();
+
+function AddCard()
+{
+	gFlashcards.addCard();
+	window.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: "smooth" });
+}
