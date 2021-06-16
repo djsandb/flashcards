@@ -32,7 +32,22 @@ class Flashcard {
 		this.wrapper.appendChild(container);
 
 		return new Quill(container, {
-			theme: 'bubble'
+			modules: {
+				toolbar: [
+					[{ "size": ["small", false, "large", "huge"] }],
+		
+					["bold", "italic", "underline", "strike"],
+		
+					[{ "header": 1 }, { "header": 2 }],
+		
+					[{ "list": "ordered" }, { "list": "bullet" }],
+		
+					[{ "align": [] }],
+		
+					["clean"]
+				]
+			},
+			theme: "bubble"
 		});
 	}
 
@@ -96,6 +111,18 @@ function GetPrintHtml()
 
 				p {
 					margin: 0;
+				}
+
+				.ql-align-center {
+					text-align: center;
+				}
+
+				.ql-size-large {
+					font-size: 1.5em;
+				}
+
+				ul {
+					list-style-position: inside;
 				}
 				
 				.flashcard {
