@@ -9,6 +9,14 @@ body {
 	margin-top: 15px;
 }
 
+.flashcard .button.del {
+	visibility: hidden;
+}
+
+.flashcard:hover .button.del {
+	visibility: visible;
+}
+
 .container {
 	background-color: #ffffff;
 	display: block;
@@ -35,6 +43,11 @@ a i:hover {
 
 .button {
 	margin-right: 10px;
+}
+
+.button.del {
+	margin-left: 10px;
+	margin-top: 5px;
 }
 
 #controls {
