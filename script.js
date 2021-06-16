@@ -162,9 +162,14 @@ function GetPrintHtml()
 		ret += '</div>';
 
 		ret += '<div class="container">';
-		for (let i = startIndex; i < startIndex + nCards; i++) {
-			ret += '<div class="flashcard">' + gFlashcards.cards[i].backEditor.root.innerHTML + '</div>\n';
-		}
+		if (nCards >= 3)
+			ret += '<div class="flashcard">' + gFlashcards.cards[startIndex + 2].backEditor.root.innerHTML + '</div>\n';
+		if (nCards >= 4)
+			ret += '<div class="flashcard">' + gFlashcards.cards[startIndex + 3].backEditor.root.innerHTML + '</div>\n';
+		if (nCards >= 1)
+			ret += '<div class="flashcard">' + gFlashcards.cards[startIndex + 0].backEditor.root.innerHTML + '</div>\n';
+		if (nCards >= 2)
+			ret += '<div class="flashcard">' + gFlashcards.cards[startIndex + 1].backEditor.root.innerHTML + '</div>\n';
 		ret += '</div>';
 	}
 
