@@ -133,6 +133,7 @@ function GetPrintHtml()
 					padding: 12px 15px;
 					font-family: Helvetica, Arial, sans-serif;
 					font-size: 13px;
+					line-height: 1.42;
 					tab-size: 4;
 					white-space: pre;
 				}
