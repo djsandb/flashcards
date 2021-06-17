@@ -129,13 +129,20 @@ function GetPrintHtml()
 					width: 50%;
 					height: 3in;
 					background: white;
-					border: 1px solid black;
 					padding: 12px 15px;
 					font-family: Helvetica, Arial, sans-serif;
 					font-size: 13px;
 					line-height: 1.42;
 					tab-size: 4;
 					white-space: pre;
+				}
+
+				.container.fronts .flashcard {
+					border: none;
+				}
+
+				.container.backs .flashcard {
+					border: 1px solid black;
 				}
 
 				.pagebreak {
@@ -155,13 +162,13 @@ function GetPrintHtml()
 		let startIndex = 4 * set;
 		let nCards = Math.min(4, gFlashcards.cards.length - (4 * set));
 
-		ret += '<div class="container">';
+		ret += '<div class="container fronts">';
 		for (let i = startIndex; i < startIndex + nCards; i++) {
 			ret += '<div class="flashcard">' + gFlashcards.cards[i].frontEditor.root.innerHTML + '</div>\n';
 		}
 		ret += '</div>';
 
-		ret += '<div class="container">';
+		ret += '<div class="container backs">';
 		if (nCards >= 3)
 			ret += '<div class="flashcard">' + gFlashcards.cards[startIndex + 2].backEditor.root.innerHTML + '</div>\n';
 		if (nCards >= 4)
