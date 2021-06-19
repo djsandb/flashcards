@@ -9,6 +9,8 @@ class Flashcard {
 
 		this.frontEditor = this.addSurface();
 
+		this.frontEditor.root.innerHTML = '<p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p class="ql-align-center"><span class="ql-size-large">Title</span></p>';
+
 		this.backEditor = this.addSurface();
 
 		const deleteLink = document.createElement('a');
