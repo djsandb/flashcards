@@ -100,9 +100,9 @@ function GetPrintHtml()
 
 				.container {
 					width: 10in;
-					height: 6in;
+					height: 7.5in;
 					margin-left: 0.5in;
-					margin-top: 1.25in;
+					margin-top: 0.5in;
 					overflor: hidden;
 					display: flex;
 					flex-wrap: wrap;
@@ -123,18 +123,18 @@ function GetPrintHtml()
 
 				ul {
 					list-style-position: inside;
+					margin-block-end: 0;
 				}
 				
 				.flashcard {
 					width: 50%;
-					height: 3in;
+					height: 3.75in;
 					background: white;
 					padding: 12px 15px;
 					font-family: Helvetica, Arial, sans-serif;
 					font-size: 13px;
 					line-height: 1.42;
 					tab-size: 4;
-					white-space: pre;
 				}
 
 				.container.fronts .flashcard {
@@ -189,4 +189,5 @@ function PrintCards()
 {
 	var newWin = window.open();
 	newWin.document.write(GetPrintHtml());
+	newWin.document.close();
 }
